@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>GhostHand</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>GhostHand</h1>
+<p class="sub">拟人浏览器自动化 · 不规则节奏 / 长按拖动 / 反检测</p>
+
+<div class="row">
+  <span id="dot" class="dot off"></span>
+  <span id="connText">网关未连接</span>
+  <button id="wsBtn" class="small">连接</button>
+</div>
+<div class="row">
+  <span id="dot2" class="dot off"></span>
+  <span id="attachText">未附加标签</span>
+  <button id="attachBtn" class="small">附加当前标签</button>
+</div>
+
+<label>节奏档位</label>
+<select id="pace">
+  <option value="cautious">谨慎（最慢，最像人）</option>
+  <option value="normal" selected>正常</option>
+  <option value="brisk">轻快</option>
+</select>
+
+<label>网关地址</label>
+<input id="wsUrl" value="ws://127.0.0.1:8765">
+
+<div class="section">当前标签</div>
+<div id="tabInfo" class="mono">-</div>
+
+<div class="section">快速动作（纯插件模式）</div>
+<div class="row">
+  <button id="findHandleBtn">找滑块柄</button>
+  <button id="holdDragBtn">长按拖动演示</button>
+</div>
+<div id="actionLog" class="mono small"></div>
+
+<p class="hint">
+  两种模式二选一：<br>
+  ① <b>AI 网关模式</b>——本地跑 <code>python -m ghosthand serve</code>，AI 通过 WS 下发指令；<br>
+  ② <b>纯插件模式</b>——点"附加当前标签"，用上面的快速动作直接产生拟人输入（trusted）。
+</p>
+
+<script src="popup.js"></script>
+</body>
+</html>
