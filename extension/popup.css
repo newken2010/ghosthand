@@ -1,0 +1,16 @@
+body { width: 340px; font-family: system-ui, sans-serif; font-size: 13px; margin: 0; padding: 14px; }
+h1 { font-size: 16px; margin: 0 0 2px; }
+.sub { color: #888; margin: 0 0 12px; font-size: 11px; }
+.row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.dot.off { background: #c33; }
+.dot.on { background: #3a3; }
+label { display: block; margin: 10px 0 4px; color: #555; font-size: 12px; }
+select, input { width: 100%; box-sizing: border-box; padding: 5px; font-size: 12px; }
+button { padding: 6px 10px; font-size: 12px; cursor: pointer; }
+button.small { margin-left: auto; padding: 3px 8px; }
+.section { margin: 14px 0 6px; font-weight: 600; font-size: 12px; color: #333; border-top: 1px solid #eee; padding-top: 10px; }
+.mono { font-family: Consolas, monospace; font-size: 11px; color: #444; word-break: break-all; }
+.mono.small { color: #777; margin-top: 6px; white-space: pre-wrap; }
+.hint { font-size: 11px; color: #777; line-height: 1.5; border-top: 1px solid #eee; padding-top: 10px; }
+code { background: #f0f0f0; padding: 1px 4px; border-radius: 3px; }
